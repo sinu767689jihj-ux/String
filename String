@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class StringDemo{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first String:");
+        String str1=sc.nextLine();
+        System.out.println("Enter the Second String:");
+        String str2=sc.nextLine();
+        System.out.println("Length of the First String:"+str1.length());
+        System.out.println("Length of the Second String:"+str2.length());
+        System.out.println(str1.charAt(3)+"\t"+str1.indexOf('s'));
+        System.out.println(str2.charAt(7)+"\t"+str2.indexOf('v'));
+        System.out.println(str1.concat(str2)+"\n"+str2.concat(str1));
+        System.out.println(str1.compareTo(str2)+"\n"+str2.compareTo(str1));
+        System.out.println(str1.replace('s','r'));
+        System.out.println(str2.replace('i','e'));
+        System.out.println(str1.toLowerCase());
+        System.out.println(str2.toLowerCase());
+        System.out.println(str1.toUpperCase());
+        System.out.println(str2.toUpperCase());
+        System.out.println(str1.isEmpty());
+        System.out.println(str2.isEmpty());
+        System.out.println(str1.trim());
+        System.out.println(str2.trim());
+    }
+}
